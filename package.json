@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon backend/src/app.js"
+    "dev": "cross-env NODE_ENV=development nodemon backend/src/app.js",
+    "start": "cross-env NODE_ENV=production node backend/src/app.js"
   },
   "keywords": [
     "javascrit",
